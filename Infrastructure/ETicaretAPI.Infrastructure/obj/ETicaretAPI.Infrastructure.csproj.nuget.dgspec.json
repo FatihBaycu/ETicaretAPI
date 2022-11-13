@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[11.2.2, )"
             },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.57.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[11.0.0, )"
@@ -201,6 +205,10 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.20.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             },
             "dotenv.net": {
               "target": "Package",

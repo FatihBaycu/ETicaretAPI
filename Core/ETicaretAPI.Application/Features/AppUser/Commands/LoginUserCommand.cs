@@ -1,4 +1,7 @@
-﻿using ETicaretAPI.Application.Exceptions.ETicaretAPI.Application.Exceptions;
+﻿using ETicaretAPI.Application.Abstraction.Token;
+using ETicaretAPI.Application.DTOs;
+using ETicaretAPI.Application.Exceptions;
+using ETicaretAPI.Application.Exceptions.ETicaretAPI.Application.Exceptions;
 using ETicaretAPI.Application.Features.AppUser.Models;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -15,16 +18,28 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
         public string UsernameOrEmail { get; set; }
         public string Password { get; set; }
     }
+    public class LoginUserSuccessCommand : LoginUserCommandResponse
+    {
+        public Token Token { get; set; }
+    }
+    public class LoginUserErrorCommand : LoginUserCommandResponse
+    {
+        public string Message { get; set; }
+    }
+
 
     public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, LoginUserCommandResponse>
     {
         readonly UserManager<Domain.Entities.Identity.AppUser> _userManager;
         readonly SignInManager<Domain.Entities.Identity.AppUser> _signInManager;
+        readonly ITokenHandler _tokenHandler;
 
-        public LoginUserCommandHandler(UserManager<Domain.Entities.Identity.AppUser> userManager, SignInManager<Domain.Entities.Identity.AppUser> signInManager)
+
+        public LoginUserCommandHandler(UserManager<Domain.Entities.Identity.AppUser> userManager, SignInManager<Domain.Entities.Identity.AppUser> signInManager, ITokenHandler tokenHandler)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _tokenHandler = tokenHandler;
         }
 
         public async Task<LoginUserCommandResponse> Handle(LoginUserCommand request, CancellationToken cancellationToken)
@@ -37,12 +52,20 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
                 throw new NotFoundUserException("Kullanıcı veya şifre hatalı...");
 
             SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
-            if (result.Succeeded) //Authentication başarılı!
+            if (result.Succeeded) 
             {
-                //.... Yetkileri belirlememiz gerekiyor!
+                Token token = _tokenHandler.CreateAccessToken(5);
+                return new LoginUserSuccessCommand()
+                {
+                    Token = token
+                };
             }
 
-            return new();
+            //return new LoginUserErrorCommandResponse()
+            //{
+            //    Message = "Kullanıcı adı veya şifre hatalı..."
+            //};
+            throw new AuthenticationErrorException();
         }
     }
 }

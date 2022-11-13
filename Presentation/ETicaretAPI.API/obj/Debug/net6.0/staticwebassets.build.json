@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "58LpXNcVzQ8w4t+pR1p4O9uLQBIILFhuk26FqDQNaiI=",
+  "Hash": "Zgs8OpjGz/kZiHOellPsZPuiFU1D6QOFQ3HKIEQ7pVg=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photo-images\\aspnetcore-developer-roadmap-printable.png"
+    },
+    {
+      "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\Ekran-Goruntusu-171.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/Ekran-Goruntusu-171.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\Ekran-Goruntusu-171.png"
     },
     {
       "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ma1t.PNG",
