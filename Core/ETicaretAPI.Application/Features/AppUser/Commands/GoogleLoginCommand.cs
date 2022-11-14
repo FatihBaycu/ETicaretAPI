@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Application.Features.AppUser.Commands
 {
-    public class GoogleLoginCommand:IRequest<GoogleLoginCommandResponse>
+    public class GoogleLoginCommand : IRequest<GoogleLoginCommandResponse>
     {
         public string Id { get; set; }
         public string IdToken { get; set; }
@@ -67,10 +67,10 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
             }
             if (result)
                 await _userManager.AddLoginAsync(user, info);
-            
+
             else
-              throw new Exception("Invalid external auth.");
-            
+                throw new Exception("Invalid external auth.");
+
             Token token = _tokenHelper.CreateAccessToken(5);
 
             return new()
