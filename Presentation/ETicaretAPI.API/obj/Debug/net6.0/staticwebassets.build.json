@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zgs8OpjGz/kZiHOellPsZPuiFU1D6QOFQ3HKIEQ7pVg=",
+  "Hash": "k7zswYKjyGxvA3P14twVwKouUiFBg8vwuaY1L3+kHVs=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -185,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photo-images\\profilePhoto.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\Screenshot-265.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/Screenshot-265.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\Screenshot-265.png"
     },
     {
       "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\soru.PNG",

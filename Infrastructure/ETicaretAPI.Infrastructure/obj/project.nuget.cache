@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "haN0i15iCG46QTaIPgAelYtnPnxviE0xjXVv+c9XI8BOVEHbZRGxWRQbp5Ha3VhUQRmaijfYv5f8rcSHWi3BiA==",
+  "dgSpecHash": "Erl4XXurwKxFUQUanMoq8+3+Sa51t5N0J1PiL97jH4E8CAHIOEoHUdty5hUeL/rY46Ddp4N01vSuRLEjjOWLvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -12,9 +12,6 @@
     "C:\\Users\\Fatih\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.2\\fluentvalidation.dependencyinjectionextensions.11.2.2.nupkg.sha512",
-    "C:\\Users\\Fatih\\.nuget\\packages\\google.apis\\1.57.0\\google.apis.1.57.0.nupkg.sha512",
-    "C:\\Users\\Fatih\\.nuget\\packages\\google.apis.auth\\1.57.0\\google.apis.auth.1.57.0.nupkg.sha512",
-    "C:\\Users\\Fatih\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

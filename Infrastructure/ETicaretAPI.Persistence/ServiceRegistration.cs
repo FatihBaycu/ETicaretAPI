@@ -1,4 +1,6 @@
 ﻿using ETicaretAPI.Application.Abstraction;
+using ETicaretAPI.Application.Abstraction.Services;
+using ETicaretAPI.Application.Abstraction.Services.Authentications;
 using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Application.Repositories.Customers;
 using ETicaretAPI.Application.Repositories.Files;
@@ -16,6 +18,7 @@ using ETicaretAPI.Persistence.Repositories.InvoiceFiles;
 using ETicaretAPI.Persistence.Repositories.OrderRepo;
 using ETicaretAPI.Persistence.Repositories.ProductImageFiles;
 using ETicaretAPI.Persistence.Repositories.ProductRepo;
+using ETicaretAPI.Persistence.Services;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -68,7 +71,18 @@ namespace ETicaretAPI.Persistence
             services.AddScoped<IFileReadRepository,FileReadRepository>();
             services.AddScoped<IFileWriteRepository,FileWriteRepository>();
 
-     
+            services.AddScoped<IUserService,UserService>();
+
+            services.AddHttpClient();
+
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IExternalAuthentication, AuthService>();
+            services.AddScoped<IInternalAuthentication, AuthService>();
+
+
+
+
+
 
         }
     }
