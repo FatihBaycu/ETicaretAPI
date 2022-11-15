@@ -21,6 +21,13 @@ namespace ETicaretAPI.API.Controllers
             return Ok(response);
         }
 
+        [HttpPost("[action]")]
+        public async Task<IActionResult> RefreshTokenLogin([FromBody] RefreshTokenLoginCommand command)
+        {
+            RefreshTokenLoginCommandResponse? response = await _mediator.Send(command);
+            return Ok(response);
+        }
+
         [HttpPost("google-login")]
         public async Task<IActionResult> GoogleLogin(GoogleLoginCommand googleLoginCommandRequest)
         {

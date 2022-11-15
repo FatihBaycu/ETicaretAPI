@@ -9,7 +9,6 @@ namespace ETicaretAPI.Application.Abstraction.Services
 {
     public interface IAuthService: IInternalAuthentication, IExternalAuthentication
     {
-        
-    
+       
     }
 }

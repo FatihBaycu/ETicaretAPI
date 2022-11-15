@@ -11,5 +11,7 @@ namespace ETicaretAPI.Domain.Entities.Identity
     {
         public string Name { get; set; }
         public string Surname { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenEndDate { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using ETicaretAPI.Application.Abstraction.Services;
 using ETicaretAPI.Application.DTOs.User;
+using ETicaretAPI.Application.Exceptions.ETicaretAPI.Application.Exceptions;
 using ETicaretAPI.Application.Features.AppUser.Models;
 using ETicaretAPI.Domain.Entities.Identity;
 using MediatR;
@@ -14,7 +15,7 @@ namespace ETicaretAPI.Persistence.Services
 {
     public class UserService : IUserService
     {
-        UserManager<Domain.Entities.Identity.AppUser> _userManager;
+        UserManager<AppUser> _userManager;
 
         public UserService(UserManager<AppUser> userManager)
         {
@@ -44,6 +45,18 @@ namespace ETicaretAPI.Persistence.Services
                 }
             }
             return response;
+        }
+
+        public async Task UpdateRefreshToken(string refreshToken, AppUser user,DateTime accessTokenDate,int addOnAccessToken)
+        {
+            if (user != null)
+            {
+                user.RefreshToken = refreshToken;
+                user.RefreshTokenEndDate = accessTokenDate.AddSeconds(addOnAccessToken);
+                await _userManager.UpdateAsync(user);
+            }
+            else
+                throw new NotFoundUserException();
         }
     }
 }
