@@ -1,4 +1,5 @@
 ﻿using ETicaretAPI.API.Configurations.ColumnWriters;
+using ETicaretAPI.API.Extensions;
 using ETicaretAPI.Application;
 using ETicaretAPI.Application.Validators.Product;
 using ETicaretAPI.Infrastructure;
@@ -138,6 +139,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -146,6 +148,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.ConfigureExceptionHandler<Program>(app.Services.GetRequiredService<ILogger<Program>>());
+
 app.UseSerilogRequestLogging();//bu middleware'in çağrıldığı yerde çağrıldığı yerin üstündeki middleware ler çalışmaz altındakiler çalışır.
 app.UseStaticFiles();
 app.UseHttpLogging();
