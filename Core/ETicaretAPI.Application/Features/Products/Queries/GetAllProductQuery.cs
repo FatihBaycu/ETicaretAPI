@@ -44,7 +44,7 @@ namespace ETicaretAPI.Application.Features.Products.Queries
                 p.CreatedDate,
                 p.UpdatedDate
             }).ToList();
-            _logger.LogInformation("Products GetAll metod");
+            //_logger.LogInformation("Products GetAll metod");
             //throw new Exception("Hata alındııı");
             return new()
             {
