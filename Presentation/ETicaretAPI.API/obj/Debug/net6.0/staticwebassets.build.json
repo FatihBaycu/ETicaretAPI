@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k7zswYKjyGxvA3P14twVwKouUiFBg8vwuaY1L3+kHVs=",
+  "Hash": "z4LXGvzEOu5TpwB+m/j3vSTlxoSRx0/9YXb3pNmlxaY=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photo-images\\Ekran-Goruntusu-171.png"
+    },
+    {
+      "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\kod.PNG",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/kod.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\kod.PNG"
     },
     {
       "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\ma1t.PNG",
