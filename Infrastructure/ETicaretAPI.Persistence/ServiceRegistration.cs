@@ -73,7 +73,7 @@ namespace ETicaretAPI.Persistence
 
             services.AddScoped<IUserService,UserService>();
 
-            services.AddHttpClient();
+            //services.AddHttpClient();
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IExternalAuthentication, AuthService>();

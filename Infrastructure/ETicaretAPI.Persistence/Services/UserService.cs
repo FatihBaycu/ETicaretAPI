@@ -52,7 +52,7 @@ namespace ETicaretAPI.Persistence.Services
             if (user != null)
             {
                 user.RefreshToken = refreshToken;
-                user.RefreshTokenEndDate = accessTokenDate.AddSeconds(addOnAccessToken);
+                user.RefreshTokenEndDate = accessTokenDate.AddMinutes(addOnAccessToken);
                 await _userManager.UpdateAsync(user);
             }
             else

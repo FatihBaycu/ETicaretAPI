@@ -2407,6 +2407,22 @@
         "runtime": {
           "bin/placeholder/ETicaretAPI.Persistence.dll": {}
         }
+      },
+      "ETicaretAPI.SignalR/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ETicaretAPI.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ETicaretAPI.SignalR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ETicaretAPI.SignalR.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5883,6 +5899,11 @@
       "type": "project",
       "path": "../../Infrastructure/ETicaretAPI.Persistence/ETicaretAPI.Persistence.csproj",
       "msbuildProject": "../../Infrastructure/ETicaretAPI.Persistence/ETicaretAPI.Persistence.csproj"
+    },
+    "ETicaretAPI.SignalR/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/SignalR/ETicaretAPI.SignalR.csproj",
+      "msbuildProject": "../../Infrastructure/SignalR/ETicaretAPI.SignalR.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5890,6 +5911,7 @@
       "ETicaretAPI.Application >= 1.0.0",
       "ETicaretAPI.Infrastructure >= 1.0.0",
       "ETicaretAPI.Persistence >= 1.0.0",
+      "ETicaretAPI.SignalR >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Seq.Extensions.Logging >= 6.1.0",
       "Serilog >= 2.12.0",
@@ -5934,6 +5956,9 @@
             },
             "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj": {
               "projectPath": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj"
+            },
+            "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Infrastructure\\SignalR\\ETicaretAPI.SignalR.csproj": {
+              "projectPath": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Infrastructure\\SignalR\\ETicaretAPI.SignalR.csproj"
             }
           }
         }

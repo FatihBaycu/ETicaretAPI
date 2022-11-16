@@ -15,6 +15,7 @@ namespace ETicaretAPI.Application
             collection.AddMediatR(typeof(ServiceRegistration));
             collection.AddHttpClient();
 
+
         }
     }
 }

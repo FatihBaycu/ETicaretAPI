@@ -1,16 +1,22 @@
 ﻿using ETicaretAPI.API.Configurations.ColumnWriters;
 using ETicaretAPI.API.Extensions;
 using ETicaretAPI.Application;
+using ETicaretAPI.Application.Abstraction.Hubs;
 using ETicaretAPI.Application.Validators.Product;
 using ETicaretAPI.Infrastructure;
 using ETicaretAPI.Infrastructure.Filters;
 using ETicaretAPI.Infrastructure.Services.Storage.Local;
 using ETicaretAPI.Persistence;
+using ETicaretAPI.SignalR;
+using ETicaretAPI.SignalR.Hubs;
+using ETicaretAPI.SignalR.HubServices;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.VisualBasic;
 using Serilog;
 using Serilog.Context;
 using Serilog.Core;
@@ -29,6 +35,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPersistenceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();
+builder.Services.AddSignalRServices();
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddStorage<LocalStorage>();
@@ -38,7 +45,12 @@ builder.Services.AddStorage<LocalStorage>();
 
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(
-    policy => policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyHeader().AllowAnyMethod()));
+    policy => policy.
+    WithOrigins("http://localhost:4200", "https://localhost:4200")
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials()
+    ));
 
 var myColumnOptions = new ColumnOptions
 {
@@ -168,5 +180,5 @@ app.Use(async (context, next) =>
 });
 
 app.MapControllers();
-
+app.MapHubs();
 app.Run();
