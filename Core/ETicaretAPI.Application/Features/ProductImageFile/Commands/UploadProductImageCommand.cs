@@ -38,11 +38,13 @@ namespace ETicaretAPI.Application.Features.ProductImageFile.Commands
 
             Product product = await _productReadRepository.GetByIdAsync(request.Id);
 
+            
 
             await _productImageFileWriteRepository.AddRangeAsync(result.Select(r => new Domain.Entities.ProductImageFile
             {
                 FileName = r.fileName,
                 Path = r.pathOrContainerName,
+                //Showcase = true,
                 Storage = _storageService.StorageName,
                 Products = new List<Product>() { product }
             }).ToList());

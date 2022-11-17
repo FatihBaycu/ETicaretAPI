@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\photo-images\" />
     <Folder Include="wwwroot\resource\invoices\" />
     <Folder Include="wwwroot\resource\product-images\" />
   </ItemGroup>

@@ -44,6 +44,7 @@ namespace ETicaretAPI.Application.Features.ProductImageFile.Commands
                 FileName = r.fileName,
                 Path = r.pathOrContainerName,
                 Storage = _storageService.StorageName,
+                Showcase=true,
                 Products = new List<Product>() { product }
             }).ToList());
 
