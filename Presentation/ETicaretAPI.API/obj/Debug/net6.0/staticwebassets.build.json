@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ddkV2v1g++x5Sv6MBc8vAEYGo6yI07/VkSkprYC08TM=",
+  "Hash": "wVNXK7UuKtZ0oW1QhYWo3qJeRLqe/yjIgAvLvpZK1ts=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\photo-images\\phone2---Kopya.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\profilePhoto.jpg",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/profilePhoto.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\profilePhoto.jpg"
     }
   ]
 }
