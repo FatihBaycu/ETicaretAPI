@@ -23,6 +23,7 @@ using ETicaretAPI.Persistence.Repositories.ProductRepo;
 using ETicaretAPI.Persistence.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace ETicaretAPI.Persistence
 {
@@ -80,7 +81,7 @@ namespace ETicaretAPI.Persistence
             services.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
 
             services.AddScoped<IBasketService, BasketService>();
-
+            services.AddScoped<IOrderService, OrderService>();
 
 
 

@@ -66,7 +66,6 @@ C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\n
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.AssemblyInfoInputs.cache
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.AssemblyInfo.cs
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.csproj.CoreCompileInputs.cache
-C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -115,3 +114,6 @@ C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\n
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.SignalR.dll
 C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.SignalR.pdb
+C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Fatih\source\repos\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.MvcApplicationPartsAssemblyInfo.cs

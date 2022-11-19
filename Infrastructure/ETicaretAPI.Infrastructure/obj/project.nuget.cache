@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Erl4XXurwKxFUQUanMoq8+3+Sa51t5N0J1PiL97jH4E8CAHIOEoHUdty5hUeL/rY46Ddp4N01vSuRLEjjOWLvg==",
+  "dgSpecHash": "SR2AhSaHQOwTHt6geskgJe9ryD7jedpgDkz2TNgM33iyas3r5jQFWF+zHIbcttxqsKVmsMhKwTeYmaKmnWIgpQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\source\\repos\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Fatih\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.storage.blobs\\12.14.1\\azure.storage.blobs.12.14.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.storage.common\\12.13.0\\azure.storage.common.12.13.0.nupkg.sha512",
@@ -35,7 +37,7 @@
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.2\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.10\\microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",
