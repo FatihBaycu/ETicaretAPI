@@ -36,7 +36,7 @@ namespace ETicaretAPI.Application.Features.Orders.Commands
                 BasketId=_basketService.GetUserActiveBasket?.Id.ToString()
             });
             
-            await _orderHubService.OrderAddedMessageAsync("came order has arrived. :) ");
+            //await _orderHubService.OrderAddedMessageAsync("came order has arrived. :) ");
             //todo error.
             return new();
         }

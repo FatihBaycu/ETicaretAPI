@@ -2,6 +2,7 @@
 using ETicaretAPI.Application.DTOs.Orders;
 using ETicaretAPI.Application.Features.Orders.Commands;
 using ETicaretAPI.Application.Features.Orders.Models;
+using ETicaretAPI.Application.Features.Orders.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -25,6 +26,12 @@ namespace ETicaretAPI.API.Controllers
         public async Task<IActionResult> CreateOrder(CreateOrderCommand command)
         {
             CreateOrderCommandResponse response = await _mediator.Send(command);
+            return Ok(response);
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllOrders([FromQuery]GetAllOrdersQuery query)
+        {
+            GetAllOrdersQueryResponse response = await _mediator.Send(query);
             return Ok(response);
         }
     }
