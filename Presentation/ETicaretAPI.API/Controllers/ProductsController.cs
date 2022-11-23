@@ -1,6 +1,7 @@
 ﻿using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using ETicaretAPI.Application.Abstraction;
+using ETicaretAPI.Application.Abstraction.Services;
 using ETicaretAPI.Application.Abstraction.Storage;
 using ETicaretAPI.Application.Features.ProductImageFile.Commands;
 using ETicaretAPI.Application.Features.ProductImageFile.Models;
@@ -164,5 +165,5 @@ namespace ETicaretAPI.API.Controllers
             ChangeShowcaseImageCommandResponse response = await _mediator.Send(changeShowcaseImageCommandRequest);
             return Ok(response);
         }
-    }
+
 }

@@ -1,4 +1,5 @@
-﻿using ETicaretAPI.Application.Abstraction.Storage;
+﻿using ETicaretAPI.Application.Abstraction.Services;
+using ETicaretAPI.Application.Abstraction.Storage;
 using ETicaretAPI.Application.Abstraction.Storeage.Local;
 using ETicaretAPI.Application.Abstraction.Token;
 using ETicaretAPI.Infrastructure.Enums;
@@ -22,7 +23,9 @@ namespace ETicaretAPI.Infrastructure
         public static void AddInfrastructureServices(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddScoped<IStorageService, StorageService>();
-            serviceCollection.AddScoped<ITokenHandler, TokenHandler>();
+            serviceCollection.AddScoped<ITokenHandler, TokenHandler>(); 
+            serviceCollection.AddScoped<IMailService, MailService>();
+
 
         }
         public static void AddStorage<T>(this IServiceCollection serviceCollection) where T : Storage, IStorage
