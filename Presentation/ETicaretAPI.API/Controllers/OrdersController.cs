@@ -41,5 +41,12 @@ namespace ETicaretAPI.API.Controllers
             GetOrderByIdQueryResponse response=await _mediator.Send(query);
             return Ok(response);
         }
+        
+        [HttpGet("completed-order/{Id}")]
+        public async Task<IActionResult> CompletedOrder([FromRoute]CompletedOrderCommand command)
+        {
+            CompletedOrderCommandResponse response = await _mediator.Send(command);
+            return Ok(response);
+        }
     }
 }

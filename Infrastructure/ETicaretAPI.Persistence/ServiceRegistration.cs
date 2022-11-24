@@ -3,6 +3,7 @@ using ETicaretAPI.Application.Abstraction.Services;
 using ETicaretAPI.Application.Abstraction.Services.Authentications;
 using ETicaretAPI.Application.Repositories.Basket;
 using ETicaretAPI.Application.Repositories.BasketItem;
+using ETicaretAPI.Application.Repositories.CompletedOrderRepo;
 using ETicaretAPI.Application.Repositories.Customers;
 using ETicaretAPI.Application.Repositories.Files;
 using ETicaretAPI.Application.Repositories.InvoiceFiles;
@@ -14,6 +15,7 @@ using ETicaretAPI.Persistence.Concretes;
 using ETicaretAPI.Persistence.Contexts;
 using ETicaretAPI.Persistence.Repositories.Basket;
 using ETicaretAPI.Persistence.Repositories.BasketItem;
+using ETicaretAPI.Persistence.Repositories.CompletedOrderRepo;
 using ETicaretAPI.Persistence.Repositories.CustomerRepo;
 using ETicaretAPI.Persistence.Repositories.Files;
 using ETicaretAPI.Persistence.Repositories.InvoiceFiles;
@@ -84,6 +86,9 @@ namespace ETicaretAPI.Persistence
 
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IOrderService, OrderService>();
+
+            services.AddScoped<ICompletedOrderReadRepository, CompletedOrderReadRepository>();
+            services.AddScoped<ICompletedOrderWriteRepository, CompletedOrderWriteRepository>();
 
 
 

@@ -15,5 +15,6 @@ namespace ETicaretAPI.Application.DTOs.Orders
         public string Id { get; set; }
         public string OrderCode { get; set; }
         public object? ProductImages { get; set; }
+        public bool Completed { get; set; }
     }
 }

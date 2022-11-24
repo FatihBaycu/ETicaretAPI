@@ -26,13 +26,14 @@ namespace ETicaretAPI.Application.Features.Orders.Queries
         public async Task<GetOrderByIdQueryResponse> Handle(GetOrderByIdQuery request, CancellationToken cancellationToken)
         {
             var singleOrder=await _orderService.GetOrderByIdAsync(request.Id);
-            return new(){
-            Address=singleOrder.Address,
-            BasketItems=singleOrder.BasketItems,
-            CreatedDate=singleOrder.CreatedDate,
-            Description=singleOrder.Description,
-            Id=singleOrder.Id,
-            OrderCode = singleOrder.OrderCode,
+            return new() {
+                Address = singleOrder.Address,
+                BasketItems = singleOrder.BasketItems,
+                CreatedDate = singleOrder.CreatedDate,
+                Description = singleOrder.Description,
+                Id = singleOrder.Id,
+                OrderCode = singleOrder.OrderCode,
+                CompletedOrder = singleOrder.Completed
             };
         }
     }

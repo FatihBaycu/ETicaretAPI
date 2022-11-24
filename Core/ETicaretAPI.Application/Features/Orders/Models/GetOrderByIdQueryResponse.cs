@@ -14,5 +14,6 @@ namespace ETicaretAPI.Application.Features.Orders.Models
         public string Description { get; set; }
         public string Id { get; set; }
         public string OrderCode { get; set; }
+        public bool CompletedOrder { get; set; }
     }
 }
