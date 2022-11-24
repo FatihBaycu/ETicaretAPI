@@ -21,6 +21,7 @@ using ETicaretAPI.Persistence.Repositories.OrderRepo;
 using ETicaretAPI.Persistence.Repositories.ProductImageFiles;
 using ETicaretAPI.Persistence.Repositories.ProductRepo;
 using ETicaretAPI.Persistence.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
@@ -46,7 +47,8 @@ namespace ETicaretAPI.Persistence
                 options.Password.RequireUppercase = false;
 
             }
-                ).AddEntityFrameworkStores<ETicaretAPIDbContext>();
+                ).AddEntityFrameworkStores<ETicaretAPIDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddScoped<ICustomerReadRepository,CustomerReadRepository>();
             services.AddScoped<ICustomerWriteRepository,CustomerWriteRepository>();

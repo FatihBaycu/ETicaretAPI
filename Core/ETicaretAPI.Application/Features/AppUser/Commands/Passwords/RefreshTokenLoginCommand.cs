@@ -1,9 +1,9 @@
 ﻿using ETicaretAPI.Application.Abstraction.Services;
 using ETicaretAPI.Application.DTOs;
-using ETicaretAPI.Application.Features.AppUser.Models;
+using ETicaretAPI.Application.Features.AppUser.Models.Passwords;
 using MediatR;
 
-namespace ETicaretAPI.Application.Features.AppUser.Commands
+namespace ETicaretAPI.Application.Features.AppUser.Commands.Passwords
 {
     public class RefreshTokenLoginCommand : IRequest<RefreshTokenLoginCommandResponse>
     {
@@ -20,10 +20,10 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
 
         public async Task<RefreshTokenLoginCommandResponse> Handle(RefreshTokenLoginCommand request, CancellationToken cancellationToken)
         {
-            Token token=await _authService.RefreshTokenLoginAsync(request.RefreshToken);
+            Token token = await _authService.RefreshTokenLoginAsync(request.RefreshToken);
             return new()
             {
-                Token=token
+                Token = token
             };
         }
     }

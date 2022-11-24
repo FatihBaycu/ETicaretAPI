@@ -3,7 +3,7 @@ using ETicaretAPI.Application.Abstraction.Token;
 using ETicaretAPI.Application.DTOs;
 using ETicaretAPI.Application.Exceptions;
 using ETicaretAPI.Application.Exceptions.ETicaretAPI.Application.Exceptions;
-using ETicaretAPI.Application.Features.AppUser.Models;
+using ETicaretAPI.Application.Features.AppUser.Models.Auths;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -12,14 +12,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Features.AppUser.Commands
+namespace ETicaretAPI.Application.Features.AppUser.Commands.Auths
 {
     public class LoginUserCommand : IRequest<LoginUserCommandResponse>
     {
         public string UsernameOrEmail { get; set; }
         public string Password { get; set; }
     }
-    
+
     public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, LoginUserCommandResponse>
     {
         readonly IAuthService _authService;

@@ -166,4 +166,5 @@ namespace ETicaretAPI.API.Controllers
             return Ok(response);
         }
 
+    }
 }

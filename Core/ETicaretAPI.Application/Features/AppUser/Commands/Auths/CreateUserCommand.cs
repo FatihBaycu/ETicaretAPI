@@ -1,11 +1,11 @@
 ﻿using ETicaretAPI.Application.Abstraction.Services;
 using ETicaretAPI.Application.DTOs.User;
 using ETicaretAPI.Application.Exceptions;
-using ETicaretAPI.Application.Features.AppUser.Models;
+using ETicaretAPI.Application.Features.AppUser.Models.Auths;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 
-namespace ETicaretAPI.Application.Features.AppUser.Commands
+namespace ETicaretAPI.Application.Features.AppUser.Commands.Auths
 {
     public class CreateUserCommand : IRequest<CreateUserCommandModel>
     {
@@ -29,7 +29,7 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
         public async Task<CreateUserCommandModel> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
 
-          CreateUserResponse response=  await _userService.CreateAsync(new()
+            CreateUserResponse response = await _userService.CreateAsync(new()
             {
                 Email = request.Email,
                 Name = request.Name,
@@ -41,10 +41,10 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
 
             return new()
             {
-                Message=response.Message,
-                Succeeded=response.Succeeded
+                Message = response.Message,
+                Succeeded = response.Succeeded
             };
- 
+
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using ETicaretAPI.Application.Abstraction.Services;
-using ETicaretAPI.Application.Features.AppUser.Models;
+using ETicaretAPI.Application.Features.AppUser.Models.Auths;
 using MediatR;
 
-namespace ETicaretAPI.Application.Features.AppUser.Commands
+namespace ETicaretAPI.Application.Features.AppUser.Commands.Auths
 {
     public class GoogleLoginCommand : IRequest<GoogleLoginCommandResponse>
     {
@@ -26,7 +26,7 @@ namespace ETicaretAPI.Application.Features.AppUser.Commands
 
         public async Task<GoogleLoginCommandResponse> Handle(GoogleLoginCommand request, CancellationToken cancellationToken)
         {
-            var token = await _authService.GoogleLoginAsync(request.IdToken,request.FirstName,request.LastName, 15);
+            var token = await _authService.GoogleLoginAsync(request.IdToken, request.FirstName, request.LastName, 15);
             return new()
             {
                 Token = token

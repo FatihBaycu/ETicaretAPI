@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Features.AppUser.Models
+namespace ETicaretAPI.Application.Features.AppUser.Models.Auths
 {
     public class LoginUserCommandResponse
     {
